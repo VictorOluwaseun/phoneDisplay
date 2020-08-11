@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Phone Display</string>
+    <string name="title">Welcome to app</string>
+    <string name="para">3,666 businesses signed up last week.\nTry Acme free 30 days</string>
+</resources>
