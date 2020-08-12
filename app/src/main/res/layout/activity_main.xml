@@ -7,8 +7,14 @@
     android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.AppCompatImageButton
+    android:src = "@drawable/ic_baseline_arrow_back_24"
+    style="@style/backArrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/phoneImage"
         android:layout_width="218dp"
         android:layout_height="316dp"
         android:scaleType="centerCrop"
@@ -21,28 +27,28 @@
         app:layout_constraintVertical_bias="0.274" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title"
-        android:textColor="#fff"
+        android:textColor="@color/light"
         android:textSize="25sp"
         android:textStyle="normal"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneImage"
         app:layout_constraintVertical_bias="0.17000002" />
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/para"
-        android:textColor="#c0c0c0"
+        android:textColor="@color/colorTextDim"
         android:textSize="18sp"
         android:textStyle="normal"
         android:typeface="sans"
@@ -50,35 +56,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
         app:layout_constraintVertical_bias="0.104" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSignIn"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:background="#673bb7"
+        android:background="@color/colorBtn"
         android:text="sign in"
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/btnSignUP"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubtitle"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSignUP"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:background="#673bb7"
+        android:background="@color/colorBtn"
         android:text="sign up"
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/btnSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubtitle"
         app:layout_constraintVertical_bias="1.0" />
 
 
